@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  db_service:
+    container_name: "check_health"
+    build:
+      context: ./check_health
+      dockerfile: Dockerfile
+    ports:
+      - "5555:8080"
